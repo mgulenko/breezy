@@ -1,0 +1,48 @@
+.containerRow
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.containerRowReverse
+{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white
+}
+
+.containerContentRow
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: white
+}
+
+.blockContent
+{
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   text-align: left;
+   width: 50%;
+   color: #663333;
+}
+
+.Image
+{
+    width: 18%;
+}
+
+.blockHeader
+{
+    font-weight: 400;
+}
+
+.contentLayout
+{
+    width: 50%;
+    margin-left: 25%;
+}

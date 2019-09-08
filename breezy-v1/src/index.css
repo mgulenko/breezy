@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato'
+}
+
+button
+{
+  font-family: 'Lato'
+}
+
+.buttonOnBkgLrg
+{
+    margin-top: 20px;
+    width: 12rem;
+    height: 3.5rem;
+    background-color: Transparent;
+    outline: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #663333;
+    color: #663333;
+}
+
+.buttonOnPrimeLrg
+{
+    margin-top: 20px;
+    width: 12rem;
+    height: 3.5rem;
+    background-color: Transparent;
+    outline: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
