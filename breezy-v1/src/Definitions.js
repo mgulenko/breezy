@@ -22,10 +22,10 @@ export const Palette =
  */
 export const Orientation = 
 {
-    //Content to the left, images to the right
-    LeftToRight: 0,
-    //Content to the right, images to the left
-    RightToleft: 1
+    Horizontal : 0,
+    Vertical   : 1,
+    LeftToRight: 2,
+    RightToleft: 3,
 }
 
 /**
