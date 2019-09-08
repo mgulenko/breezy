@@ -23,6 +23,22 @@ class SocialMediaBar extends Component
            this.state.orientation = props.orientation;
    }
 
+   openFacebookHandler = () =>
+   {
+       window.open('https://www.facebook.com', '_blank');
+   }
+
+   openInstagramHandler = () =>
+   {
+       window.open('https://www.instagram.com', '_blank');
+   }
+
+   openEtsyHandler = () =>
+   {
+       window.open('https://www.etsy.com', '_blank');
+   }
+
+   
     render() 
     {
         // define styles for the container
@@ -32,7 +48,7 @@ class SocialMediaBar extends Component
             flexDirection   : 'row',
             justifyContent  : 'space-between',
             height          : '2rem',
-            width           : '9rem'
+            width           : '9rem',
         };
     
         // adjust flex direction if it's vertical
@@ -47,15 +63,15 @@ class SocialMediaBar extends Component
         const logoStyle = 
         {
             width:  '2rem',
-            height: '2rem'
+            height: '2rem',
+            cursor: 'pointer'
         }
-
         //generate component
         return (        
             <div className = "socialMediaBar" style={style}>
-                <img src={FacebookLogo}  style = {logoStyle} alt=""/>
-                <img src={InstagramLogo} style = {logoStyle} alt=""/>
-                <img src={EtsyLogo}      style = {logoStyle} alt=""/>
+                <img src={FacebookLogo}  style = {logoStyle} alt="" onClick = {this.openFacebookHandler}/>
+                <img src={InstagramLogo} style = {logoStyle} alt="" onClick = {this.openInstagramHandler}/>
+                <img src={EtsyLogo}      style = {logoStyle} alt="" onClick = {this.openEtsyHandler}/>
             </div>
         );
     }
