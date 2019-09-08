@@ -7,6 +7,7 @@ import {Palette} from './Definitions.js';
 import MainSection from './home_page/MainSectionComponent.js';
 import SubSection from './home_page/SubSectionComponent.js';
 import AboutBlock from './home_page/AboutBlockComponent.js';
+import FooterComponent from './shared_components/footer/FooterComponent';
 
 
 class App extends Component {
@@ -58,6 +59,7 @@ class App extends Component {
               content     = 'The Golden Retriever is a large-sized gun dog that retrieves shot waterfowl, such as ducks and upland game birds, during hunting and shooting parties.'
               btnLabel    = 'FIND OUT MORE'
           />
+          <FooterComponent/>
           
       </div>
     );

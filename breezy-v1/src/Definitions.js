@@ -1,3 +1,5 @@
+import React from 'react';
+
 /////////////////COLOR PALETTE ///////////////////////
 
 /**
@@ -40,4 +42,23 @@ export const InformationBlockType =
         AboutMaterials  : 1,
         AboutCompany    : 2,
     }
+}
+
+/**
+ * Generates company logo string. When the actual logo is created remove that. 
+ */
+export const companyLogo = () =>
+{
+    const style = 
+    {
+        fontWeight  : '1000',
+        fontSize    : '1.7em',
+        color       : Palette.OnPrimaryColor
+    };
+
+    return(
+        <div style = {style}>
+            breezy
+        </div>
+    );
 }
