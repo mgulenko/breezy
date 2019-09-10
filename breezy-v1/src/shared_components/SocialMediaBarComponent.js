@@ -25,7 +25,7 @@ class SocialMediaBar extends Component
 
    openFacebookHandler = () =>
    {
-       window.open('https://www.facebook.com', '_blank');
+       window.open('https://www.facebook.com/BreezyWraps/', '_blank');
    }
 
    openInstagramHandler = () =>

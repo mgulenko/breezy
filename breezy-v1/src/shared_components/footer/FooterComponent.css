@@ -1,0 +1,52 @@
+.footerContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    margin-left: 8%;
+    margin-right:8%;
+    margin-bottom: 1%;
+    border-bottom: 1px solid;
+}
+
+.footerLogo
+{
+    margin-left: 5%;
+}
+
+.footerContactInfoContainer
+{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: inherit;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.footerSectioHeader
+{
+    margin-bottom:6px;
+}
+
+.footerSectionItem
+{
+    font-size: 0.9em;
+    font-weight: 100;
+    margin-bottom: 1px;
+}
+
+.footerSectionSocialMedia
+{
+    margin-top:25%;
+}
+
+.footerSectionLegal
+{
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-top: 1.5%;
+}
