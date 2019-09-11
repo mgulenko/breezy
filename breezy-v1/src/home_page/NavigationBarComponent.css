@@ -1,0 +1,33 @@
+.mainNavBarContainer
+{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    align-items: center;
+}
+
+.mainNavBarItem
+{
+    width: 7rem;
+    height: 3.5rem;
+    align-self: flex-end;
+}
+
+.mainNavBarPlaceOrder
+{
+    width: 12rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    margin-right: 3rem;
+    margin-left: 2rem;
+}
+
+.mainNavBarRightAlign
+{
+    margin-left: auto;
+}
+
+.mainNavBarLogo
+{
+    margin-left: 5%;
+}
