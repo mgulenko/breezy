@@ -51,7 +51,7 @@ const footerComponent = (props)=>
 const generateReviewSection = () =>
 {
     const review   = requestReview();
-    const rating   = review.rating;
+    let rating   = review.rating;
     const comment  = review.comment;
     const author   = review.author;
     const location = review.location;
@@ -73,6 +73,7 @@ const generateReviewSection = () =>
     }
 
     //generate amount of starts we need to display basaed on the raitn vale
+    rating = rating > 10 ? 10 : rating;
     const ratingVisual = [];
     for(let i =0; i < rating; i++)
     {
