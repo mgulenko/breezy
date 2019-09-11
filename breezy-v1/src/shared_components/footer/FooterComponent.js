@@ -2,6 +2,8 @@ import React from 'react';
 import { Palette, companyLogo, Orientation } from '../../Definitions';
 import './FooterComponent.css'
 import SocialMediaBar from '../SocialMediaBarComponent';
+import ImgRating from '../../res/icons/rating-icon.png'
+
 const footerComponent = (props)=>
 {
     //container additional styles
@@ -15,20 +17,24 @@ const footerComponent = (props)=>
     const styleText = 
     {
         color: Palette.OnPrimaryColor,
+        textDecoration: 'none',
     }
 
     const styleBorder = 
     {
         borderColor: Palette.OnPrimaryColor,
     }
+
+    const reviewSection = generateReviewSection();
    
     //generate component
     return (
         <div style ={styleContainer}>
             <div className="footerContainer" style={styleBorder}> 
                 <div className="footerLogo">{companyLogo()}</div>
+                {reviewSection}
                 <div className="footerContactInfoContainer" style ={styleText}>
-                    <div className="footerSectioHeader">CONTACT</div>
+                    <div className="footerSectionContactHeader">CONTACT</div>
                     <div className="footerSectionItem">1-802-123-4567</div>
                     <a className="footerSectionItem" href="mailto: hello@breezy.email.com" style={styleText}>hello@breezy.email.com</a>
                     <div className="footerSectionSocialMedia">
@@ -40,6 +46,69 @@ const footerComponent = (props)=>
         </div>        
        
     );
+}
+
+const generateReviewSection = () =>
+{
+    const review   = requestReview();
+    const rating   = review.rating;
+    const comment  = review.comment;
+    const author   = review.author;
+    const location = review.location;
+
+    // Define styles for the read more link
+    const styleReadMore = 
+    {
+        color: Palette.OnPrimaryColor,
+        textDecoration: 'none',
+        marginTop : '6%',
+    };
+
+    //define styles for the rating visualisation sections (starts)
+    const styleRating = 
+    {
+        width: '1rem',
+        height: '1rem',
+        marginRight: '2px',
+    }
+
+    //generate amount of starts we need to display basaed on the raitn vale
+    const ratingVisual = [];
+    for(let i =0; i < rating; i++)
+    {
+        ratingVisual.push( <img src={ImgRating}  style = {styleRating} alt=""/>);
+    }
+
+    //finally geerate the section
+    return(
+        <div className="footerReviewSectionContainer">
+            <div className="footerSectionReviewHeader">LATEST GOOGLE REVIEW</div>
+            <div className="footerSectionRating">
+               {ratingVisual}
+            </div>
+            <div className="footerSectionItem">{comment}</div>
+            <div className="footerSectionReviewAuthor">{author + ', ' + location}</div>
+            <a href="" className="footerSectionItem" style = {styleReadMore}>Read more ></a>
+        </div>
+    );
+}
+
+const requestReview = () =>
+{
+    return getTestReview();
+}
+
+const getTestReview = () =>
+{
+    const review = 
+    {
+        rating    : 5, 
+        comment   : "Love the bracelet, definitely gonna order more in the future.",
+        author    : "Michael Gulenko",
+        location  : "Burlinton, Vermont"
+    }
+
+    return review;
 }
 
 export default footerComponent;

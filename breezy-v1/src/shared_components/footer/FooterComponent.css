@@ -16,6 +16,37 @@
     margin-left: 5%;
 }
 
+.footerReviewSectionContainer
+{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: inherit;
+    width: 13rem;
+    margin-left: 5%;
+}
+
+.footerSectionReviewHeader
+{
+    margin-bottom:6px;
+}
+
+.footerSectionReviewAuthor
+{
+    font-size: 0.7em;
+    font-weight: 100;
+    font-style: italic;
+    margin-top: 4%;
+}
+
+.footerSectionRating
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .footerContactInfoContainer
 {
     display : flex;
@@ -27,7 +58,7 @@
     margin-right: 5%;
 }
 
-.footerSectioHeader
+.footerSectionContactHeader
 {
     margin-bottom:6px;
 }
