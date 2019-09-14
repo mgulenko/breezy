@@ -1,0 +1,59 @@
+.contactContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfoContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactHeader
+{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.4em;
+    font-weight: 300;
+}
+
+.contactSubHeader
+{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+
+.contactTextArea
+{
+    width: 40%;
+    height: 18em;
+    align-self: center;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+    margin-bottom: 1rem; 
+    margin-top: 2rem; 
+    border: none;
+}
+
+input[name=name]
+{
+    width: 20%;
+    height: 3.5rem;
+    text-align: center;
+    border: none;
+    margin-right: 4rem
+    
+}
+
+input[name=email]
+{
+    width: 20%;
+    height: 3.5rem;
+    text-align: center;
+    border: none;
+}
