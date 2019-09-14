@@ -10,7 +10,7 @@ export const Palette =
 {
     PrimaryColor            : '#339999',
     PrimaryVariantColor     : '#339999',
-    SecondaryColor          : '#00CCBB',
+    SecondaryColor          : '#29d3c6',
     SecondaryVariantColor   : '#00CCBB',
     BackgroundColor         : '#FFFFFF',
     BackgroundVariantColor  : '#FFFFFF',
