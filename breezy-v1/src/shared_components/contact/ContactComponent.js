@@ -1,20 +1,22 @@
 import React from 'react';
 import './ContactComponent.css'
 import { Palette } from '../../Definitions';
-import ImgPhone from '../../res/icons/phone-icon.png'
-import ImgEmail from '../../res/icons/email-icon.png'
+import ImgPhone from '../../res/icons/phone-icon.png';
+import ImgEmail from '../../res/icons/email-icon.png';
+import ImgPhoneDark from '../../res/icons/phone-icon-dark.png'
+import ImgEmailDark from '../../res/icons/email-icon-dark.png'
 
 const contactComponent = (props)=>
 {
     //main cotainer styles
-    const styleContainer = 
+    let styleContainer = 
     {
         backgroundColor     : Palette.SecondaryColor,
         color               : Palette.OnSecondaryColor,
     };
 
     //link styles
-    const styleLink = 
+    let styleLink = 
     {
         color: Palette.OnSecondaryColor,
         textDecoration: 'none',
@@ -28,11 +30,28 @@ const contactComponent = (props)=>
          marginTop: '3rem'
      };
 
-     const styleEdit = 
+     let styleEdit = 
      {
          backgroundColor    : Palette.SecondaryVariantColor,
          color              : Palette.OnSecondaryColor
      }
+
+     let btnClassName = "buttonOnPrimeLrg";
+     let imgPhoneSrc = ImgPhone;
+     let imgEmailSrc = ImgEmail;
+     // apply color scheme for the cobtact page
+     if(props.contactPage)
+     {
+        styleContainer.backgroundColor = Palette.BackgroundColor;
+        styleContainer.color           = Palette.OnBackgroundColor;
+        styleLink.color                = Palette.OnBackgroundColor;
+        styleEdit.backgroundColor      = Palette.BackgroundVariantColor;
+        styleEdit.color                = Palette.OnBackgroundColor;
+        btnClassName                   = "buttonOnBkgLrg";
+        imgPhoneSrc                    = ImgPhoneDark;
+        imgEmailSrc                    = ImgEmailDark;
+     }
+
     //define styles for logo images
     const styleImgPhone = 
     {
@@ -55,11 +74,11 @@ const contactComponent = (props)=>
             <div className="contactHeader">CONTACT</div>
             <div className="contactSubHeader">LET'S STAY IN TOUCH</div>
             <div className="contactInfoContainer">
-                <img src={ImgPhone} style = {styleImgPhone} alt="" />
+                <img src={imgPhoneSrc} style = {styleImgPhone} alt="" />
                 <div>
                     1-802-123-4567
                 </div>
-                <img src={ImgEmail} style = {styleImgEmail} alt="" />
+                <img src={imgEmailSrc} style = {styleImgEmail} alt="" />
                 <a className="footerSectionItem" href="mailto: hello@breezy.email.com" style={styleLink}>hello@breezy.email.com</a>
             </div>
             <textarea className="contactTextArea" style={styleEdit}>Tell us a little about what you are looking for</textarea>
@@ -67,7 +86,7 @@ const contactComponent = (props)=>
                  <input type="text" style={styleEdit} name="name"  value="Name"/>
                  <input type="text" style={styleEdit} name="email" value="Email"/>
             </div>
-            <button className="buttonOnPrimeLrg" style = {styleButton}>SEND</button>
+            <button className={btnClassName} style = {styleButton}>SEND</button>
         </div>
     );
 }

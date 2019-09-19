@@ -8,7 +8,7 @@ class App extends Component
 {
   state = 
   {
-    currentPage : PageType.HomePage
+    currentPage : PageType.ContactPage
   }
 
   render() 

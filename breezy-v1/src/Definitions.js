@@ -13,7 +13,7 @@ export const Palette =
     SecondaryColor          : '#29d3c6',
     SecondaryVariantColor   : '#00CCBB',
     BackgroundColor         : '#FFFFFF',
-    BackgroundVariantColor  : '#FFFFFF',
+    BackgroundVariantColor  : '#ECECEC',
     OnPrimaryColor          : '#FFFFFF',
     OnSecondaryColor        : '#FFFFFF',
     OnBackgroundColor       : '#663333'
