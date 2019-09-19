@@ -45,6 +45,18 @@ export const InformationBlockType =
 }
 
 /**
+ * Defines page types
+ */
+export const PageType = 
+{
+    HomePage   : 0,
+    ArtWork    : 1,
+    Materials  : 2,
+    About      : 3,
+    Contact    : 4
+}
+
+/**
  * Generates company logo string. When the actual logo is created remove that. 
  */
 export const companyLogo = () =>
