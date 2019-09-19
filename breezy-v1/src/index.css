@@ -20,6 +20,7 @@ button
     border-width: 0.1rem;
     border-color: #663333;
     color: #663333;
+    cursor: pointer;
 }
 
 .buttonOnPrimeLrg
@@ -33,4 +34,5 @@ button
     border-width: 0.1rem;
     border-color: #FFFFFF;
     color: #FFFFFF;
+    cursor: pointer;
 }
