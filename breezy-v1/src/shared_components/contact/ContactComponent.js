@@ -30,16 +30,28 @@ const contactComponent = (props)=>
          marginTop: '3rem'
      };
 
+     //color scheme for the edit controls
      let styleEdit = 
      {
          backgroundColor    : Palette.SecondaryVariantColor,
-         color              : Palette.OnSecondaryColor
+         color              : Palette.OnSecondaryColor,
+         outline            : "none"
      }
 
+     //button class and image resources
      let btnClassName = "buttonOnPrimeLrg";
      let imgPhoneSrc = ImgPhone;
      let imgEmailSrc = ImgEmail;
-     // apply color scheme for the cobtact page
+
+     //contact text
+     let contactText = (
+         <div>
+            <div className="contactHeader">CONTACT</div>
+            <div className="contactSubHeader">LET'S STAY IN TOUCH</div>
+         </div>
+     );
+
+     // adjust styles and content for the cotact page
      if(props.contactPage)
      {
         styleContainer.backgroundColor = Palette.BackgroundColor;
@@ -50,6 +62,12 @@ const contactComponent = (props)=>
         btnClassName                   = "buttonOnBkgLrg";
         imgPhoneSrc                    = ImgPhoneDark;
         imgEmailSrc                    = ImgEmailDark;
+
+        contactText = (
+            <div className="contactText">
+                You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally.
+            </div>
+        );
      }
 
     //define styles for logo images
@@ -71,8 +89,7 @@ const contactComponent = (props)=>
 
     return(
         <div className="contactContainer" style = {styleContainer}>
-            <div className="contactHeader">CONTACT</div>
-            <div className="contactSubHeader">LET'S STAY IN TOUCH</div>
+            {contactText}
             <div className="contactInfoContainer">
                 <img src={imgPhoneSrc} style = {styleImgPhone} alt="" />
                 <div>

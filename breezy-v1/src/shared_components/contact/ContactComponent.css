@@ -26,6 +26,13 @@
     margin-bottom: 2rem;
 }
 
+.contactText
+{
+    align-self: center;
+    width: 40%;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
 
 .contactTextArea
 {
@@ -39,6 +46,7 @@
     margin-top: 2rem; 
     border: none;
 }
+
 
 input[name=name]
 {
