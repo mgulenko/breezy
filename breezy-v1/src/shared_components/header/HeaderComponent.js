@@ -4,6 +4,7 @@ import ImgMaterialsBkg from '../../res/materials_page/materials-bkg.jpg';
 import ImgAboutBkg from '../../res/about_page/about-bkg.jpg';
 import ImgContactBkg from '../../res/contact_page/contact-bkg.jpg';
 import { PageType } from '../../Definitions';
+import NavBar from '../controls/NavigationBarComponent';
 
 const headerComponent = (props)=>
 {
@@ -33,10 +34,23 @@ const headerComponent = (props)=>
         title     = "";
         break;
     }
+
+    const style =
+    {
+      backgroundImage: "url(" + imgBkgSrc + ")",
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition : 'center center',
+      backgroundAttachment : 'fixed',
+      height: "100%"
+    };
     
+    console.log(style);
     return(
-        <div>
-            {title}
+        <div style={style}>
+            <NavBar/>
+            <div>
+                {title}
+            </div>
         </div>
     );
 }
