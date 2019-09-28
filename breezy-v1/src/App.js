@@ -8,7 +8,7 @@ class App extends Component
 {
   state = 
   {
-    currentPage : PageType.ContactPage
+    currentPage : PageType.Contact
   }
 
   render() 
@@ -17,10 +17,10 @@ class App extends Component
     let page = null;
     switch(this.state.currentPage)
     {
-      case PageType.HomePage:
+      case PageType.Home:
         page = (<HomePage/>);
         break;
-      case PageType.ContactPage:
+      case PageType.Contact:
         page = (<ContactPage/>);
         break;
       default:

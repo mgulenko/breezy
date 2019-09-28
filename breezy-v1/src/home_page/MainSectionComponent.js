@@ -3,7 +3,7 @@ import './MainSectionComponent.css'
 import '..//index.css';
 import SocialMediaBar from '../shared_components/controls/SocialMediaBarComponent.js'
 import { Orientation } from '../Definitions';
-import NavBar from './NavigationBarComponent';
+import NavBar from '../shared_components/controls/NavigationBarComponent';
 
 const mainSectionComponent = (props)=>
 {

@@ -49,7 +49,7 @@ export const InformationBlockType =
  */
 export const PageType = 
 {
-    HomePage   : 0,
+    Home       : 0,
     ArtWork    : 1,
     Materials  : 2,
     About      : 3,
