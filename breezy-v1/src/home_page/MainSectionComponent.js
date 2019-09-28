@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainSectionComponent.css'
 import '..//index.css';
-import SocialMediaBar from '../shared_components/SocialMediaBarComponent.js'
+import SocialMediaBar from '../shared_components/controls/SocialMediaBarComponent.js'
 import { Orientation } from '../Definitions';
 import NavBar from './NavigationBarComponent';
 

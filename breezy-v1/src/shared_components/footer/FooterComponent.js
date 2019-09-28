@@ -1,7 +1,7 @@
 import React from 'react';
 import { Palette, companyLogo, Orientation } from '../../Definitions';
 import './FooterComponent.css'
-import SocialMediaBar from '../SocialMediaBarComponent';
+import SocialMediaBar from '../controls/SocialMediaBarComponent.js';
 import ImgRating from '../../res/icons/rating-icon.png'
 
 const footerComponent = (props)=>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {Orientation} from '../Definitions.js';
-import FacebookLogo from '../res/icons/fb-logo.png';
-import InstagramLogo from '../res/icons/insta-logo.png';
-import EtsyLogo from '../res/icons/etsy-logo.png';
+import {Orientation} from '../../Definitions.js';
+import FacebookLogo from '../../res/icons/fb-logo.png';
+import InstagramLogo from '../../res/icons/insta-logo.png';
+import EtsyLogo from '../../res/icons/etsy-logo.png';
 
 class SocialMediaBar extends Component
 {
