@@ -3,7 +3,7 @@ import ImgArtworkBkg from '../../res/artwork_page/artwork-bkg.jpg';
 import ImgMaterialsBkg from '../../res/materials_page/materials-bkg.jpg';
 import ImgAboutBkg from '../../res/about_page/about-bkg.jpg';
 import ImgContactBkg from '../../res/contact_page/contact-bkg.jpg';
-import { PageType } from '../../Definitions';
+import { PageType, Palette } from '../../Definitions';
 import NavBar from '../controls/NavigationBarComponent';
 
 const headerComponent = (props)=>
@@ -35,20 +35,29 @@ const headerComponent = (props)=>
         break;
     }
 
-    const style =
+    const styleImg =
     {
       backgroundImage: "url(" + imgBkgSrc + ")",
       backgroundRepeat: 'no-repeat',
-      backgroundPosition : 'center center',
       backgroundAttachment : 'fixed',
-      height: "100%"
+      height: '100%'
     };
     
-    console.log(style);
+    const style = 
+    {
+      display:      'flex',
+      height: '300px',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color:  Palette.OnPrimaryColor,
+      fontSize: '2.4em',
+      fontWeight: '400'
+    };
+    
     return(
-        <div style={style}>
+        <div style ={styleImg}>
             <NavBar/>
-            <div>
+            <div style={style}>
                 {title}
             </div>
         </div>

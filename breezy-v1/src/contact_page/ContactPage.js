@@ -7,7 +7,7 @@ import { PageType } from '../Definitions';
 const contactPageComponent = (props)=>
 {
     return(
-        <div>
+          <div>
             <HeaderComponent pageType = {PageType.Contact}/>
             <ContactComponent contactPage={true}/>
             <FooterComponent/>
