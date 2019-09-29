@@ -11,7 +11,7 @@ class App extends Component
 {
   state = 
   {
-    currentPage : PageType.About
+    currentPage : PageType.Home
   }
 
   render() 
